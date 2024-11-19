@@ -1,0 +1,12 @@
+version: "3.9"
+
+services:
+  crawler:
+    build: .
+    container_name: daangn_crawler
+    volumes:
+      - .:/app
+    environment:
+      - PYTHONUNBUFFERED=1
+    stdin_open: true
+    tty: true
